@@ -1,0 +1,252 @@
+.mimImagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.mimImagem img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 1000px;
+    height: 200px;
+    margin-top: 150vh;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.euImagem {
+    display: flex;
+    position: absolute;
+    top: 136%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+}
+
+.euImagem img {
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100px; 
+    height: 100px;
+    object-fit: cover;
+}
+
+
+
+body {
+    background-image: url("images/milad-fakurian-lz8j9lMe-oA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+  
+/* ::-webkit-scrollbar {
+    width: 22px;
+    background: transparent;      
+}
+
+::-webkit-scrollbar-track{
+    border: 3px solid #000055;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, #00ffff);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent, #0088ff);
+} */
+
+  
+  
+
+
+
+.titulo{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bodoni Moda', serif;
+    color: white;
+    font-size: 200%;
+    animation: nomeAparecendo 5s ease-in;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    
+}
+
+html{
+    height: 500vh;
+    scroll-behavior: smooth;
+}
+
+
+.gitLogo {
+    color: white;
+    margin-top: 45px;
+    margin-left: 90%;
+    display: inline-block;
+    position: fixed;
+    font-size: 30px;
+}
+
+.linkedinLogo{
+    color: white;
+    margin-top: 45px;
+    margin-left: 85%;
+    display: inline-block;
+    position: fixed;
+    font-size: 30px;
+  }
+  
+
+
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11.5px );
+    -webkit-backdrop-filter: blur( 11.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+    
+}
+
+header{
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+
+
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 100px;
+    
+}
+
+header ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+@keyframes nomeAparecendo {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.icone{
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    font-size: 50px;
+    left:50% ;
+    color: white;
+    
+    
+}
+.icone{
+    animation-name: setaBaixo;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes setaBaixo {
+    0%{
+        top: 80%;
+    }
+    100%{
+        top:90%;
+
+    }
+}   
+
+#sobreMim{
+    text-align: center;
+    position: absolute;
+    top: 145%;
+    left: 44%;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+    /* text-shadow: 2px 2px 4px white; */
+}
+
+.txtSobreMim{
+    text-align: center;
+    padding: 50px;
+    top: 150%;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: whitesmoke;
+    /* text-shadow: 2px 2px 4px white; */
+}
+
+#barra1{
+    margin-top: 53.8%;
+    /* box-shadow: 2px 2px 4px white; */
+}
+
+.projetos{
+    margin-top: 8%;
+    margin-left: 48%;
+    color: white;
+    font-size: 30px;
+}
+
+
+img.projeto1{
+    
+    width: 500px;
+    border-radius: 50px;
+    margin-top: 10%;
+    margin-left: -550px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+img.projeto2{
+    
+    width: 500px;
+    border-radius: 50px;
+    margin-left: 250px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
