@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,73 +10,107 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/cab7833672.js" crossorigin="anonymous"></script>
-    
-    
-    
 </head>
-<body>
-    <div class="titulo"><h1>GABRIEL VINÍCIUS</h1></div>
-    
 
-    <header id = "header">
-        <div class = "flex">
+<body>
+    <div class="titulo">
+        <h1>GABRIEL VINÍCIUS</h1>
+    </div>
+    <header id="header">
+        <div class="flex">
             <nav>
                 <ul>
                     <li><a href="#sobreMimBarra">Sobre mim</a></li>
                     <li><a href="#barra1">Projetos</a></li>
                     <li><a href="#">Contato</a></li>
-                    
                 </ul>
             </nav>
         </div>
     </header>
     <section>
         <div>
-            <a href="https://github.com/GabrielAstra" target="_blank" class = "gitLogo"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/gabriel-vin%C3%ADcius-30a443268/" target = "_blank"class="linkedinLogo"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/GabrielAstra" target="_blank" class="gitLogo"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gabriel-vin%C3%ADcius-30a443268/" target="_blank" class="linkedinLogo"><i
+                    class="fab fa-linkedin"></i></a>
         </div>
     </section>
-    
-    <div class = "icone">
-        <i class="fa-sharp fa-solid fa-circle-arrow-down"></i>
+    <div class="icone">
+        <i class="fas fa-circle-arrow-down"></i>
     </div>
-   
     <section>
         <div class="mimImagem">
-            <img src="images/wallhaven-4v2rw3.jpg" >
+            <img src="images/wallhaven-4v2rw3.jpg">
         </div>
         <div class="euImagem">
             <img src="images/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg" alt="">
         </div>
     </section>
     <section>
-        <div id ="sobreMim"><h1>Sobre mim</h1></div>
-        <p class = "txtSobreMim">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit voluptates nulla similique animi, architecto neque fugiat alias, 
-            rerum amet nemo perspiciatis, laborum saepe earum autem molestiae vitae! Culpa, temporibus suscipit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint doloremque sequi facere assumenda magnam quisquam ut incidunt alias ratione laudantium? Ipsam exercitationem maiores saepe alias eius quasi neque dicta labore!</p>
-            <hr id = sobreMimBarra>
-
-        <hr id = "barra1">    
+        <div id="sobreMim">
+            <h1>Sobre mim</h1>
+        </div>
+        <p class="txtSobreMim">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit voluptates nulla similique
+            animi, architecto neque fugiat alias, rerum amet nemo perspiciatis, laborum saepe earum autem molestiae vitae!
+            Culpa, temporibus suscipit? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint doloremque sequi facere
+            assumenda magnam quisquam ut incidunt alias ratione laudantium? Ipsam exercitationem maiores saepe alias eius
+            quasi neque dicta labore!</p>
+        <hr id="sobreMimBarra">
+        <hr id="barra1">
     </section>
-
     <section>
-        <div class ="txtProjetos">
+        <div class="txtProjetos">
             <h1>Projetos</h1>
         </div>
         <div class="projetos">
-            <img class = "projeto1" src="images/pew-nguyen-_aCYk2o74aQ-unsplash.jpg" alt="">
-            <img class = "projeto2" src="images/mailchimp-Hv9CS6KZayQ-unsplash.jpg" alt="">
+            <div class="projeto">
+                <div class="imagem">
+                    <img src="images/pew-nguyen-_aCYk2o74aQ-unsplash.jpg" alt="">
+                </div>
+                <div class="texto">
+                    <h2>Título do Projeto 1</h2>
+                    <p>Descrição do Projeto 1</p>
+                </div>
+            </div>
+            <div class="projeto">
+                <div class="imagem">
+                    <img src="images/mailchimp-Hv9CS6KZayQ-unsplash.jpg" alt="">
+                </div>
+                <div class="texto">
+                    <h2>Título do Projeto 2</h2>
+                    <p>Descrição do Projeto 2</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="efeitoVanilla.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".projeto").hover(
+                function () {
+                    $(this).find(".texto").slideDown();
+                    $(this).find("img").addClass("hovered"); 
+                },
+                function () {
+                    $(this).find(".texto").slideUp();
+                    $(this).find("img").removeClass("hovered"); 
+                }
+            );
+        });
 
+        var imagens = document.querySelectorAll(".projetos img");
 
-    
-
+        imagens.forEach(function (element) {
+            VanillaTilt.init(element);
+        });
+    </script>
 </body>
+
 </html>
